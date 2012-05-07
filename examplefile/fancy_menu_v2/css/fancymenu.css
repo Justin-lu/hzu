@@ -1,0 +1,59 @@
+/*
+Fancy Menu V2, 30.10.09
+Copyright (C) 2009 Bogdan Pop of WebRaptor (http://www.bogdanpop.info, http://www.webraptor.eu)
+Published by Freelancer Magazine (http://www.freelancermagazine.com)
+
+Released under Creative Commons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
+If you modify this source codes and use it in your own projects you must not modify or remove the above credits. 
+However, you may add your own below this line.
+*/
+*										{ margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-size:inherit; }
+.all-rounded							{ border-radius:9px; -moz-border-radius:9px; -webkit-border-radius: 9px; }
+.bottom-rounded							{ border-bottom-left-radius:9px; -moz-border-radius-bottomleft:9px; -webkit-border-bottom-left-radius:9px; 
+										  border-bottom-right-radius:9px; -moz-border-radius-bottomright:9px; -webkit-border-bottom-right-radius:9px; }
+.clear									{ display:block; clear:both; }
+body									{ margin:0px; padding:0px; background:#796564 url('../images/bg.jpg'); }
+#wrapper								{ margin:0px auto; padding:100px 0px 0px 0px; background: url('../images/top_bg.jpg') no-repeat top center; }
+
+#menu									{ display:block; margin:0px auto; width:898px; border:1px solid #DD4CAB; height:48px;
+										  background:url('../images/menu_bg.jpg') repeat-x; color:#DD4CAB; }
+#menu li								{ display:block; width:178px; height:48px; line-height:48px; float:left; text-align:center;
+										  border-right:1px solid #DD4CAB; border-left:1px solid #AD3B87; }
+#menu li.no-left-border 				{ border-left-style:none; }
+#menu li.no-right-border 				{ border-right-style:none; }
+#menu li a								{ display:block; height:48px; color:#DD4CAB; text-decoration:none; }
+#menu li a:hover						{ display:block; height:48px; color:#DD4CAB; text-decoration:none;
+										  background:url('../images/menu_bg_hover.jpg'); }
+#menu li.no-left-border a:hover			{ border-top-left-radius:9px; border-bottom-left-radius:9px;
+										  -moz-border-radius-topleft:9px; -moz-border-radius-bottomleft:9px;
+										  -webkit-border-top-left-radius:9px; -webkit-border-bottom-left-radius:9px; }
+#menu li.no-right-border a:hover		{ border-top-right-radius:9px; border-bottom-right-radius:9px;
+										  -moz-border-radius-topright:9px; -moz-border-radius-bottomright:9px;
+										  -webkit-border-top-right-radius:9px; -webkit-border-bottom-right-radius:9px; }
+										
+.menu-extend							{ display:block; width:800px; margin:0px auto; background-color:#C5D8DC; padding:10px 25px;
+										  border:1px solid #FFF; border-top-style:none; }
+.menu-extend ul							{ display:block; width:266px; float:left; padding:0px; list-style:none; }
+.menu-extend ul li a					{ text-decoration:none; color:#78475D; }
+
+#header									{ display:block; width:900px; margin:0px auto; margin-top:25px; }
+#content								{ display:block; width:900px; margin:0px auto; margin-top:25px; }
+#content h1								{ display:block; font-size:35px; color:#4D3B39; }
+#content p								{ display:block; font-size:20px; color:#FFF; padding:10px 0px; }
+#content p a							{ color:#FFF; border-bottom:1px dashed #FFF; text-decoration:none; }
+
+#overlay-mask							{ display:none; z-index:1000; background-color:#333; position:absolute; top:0; left:0; }
+#overlay-content						{ display:none; z-index:1100; background-color:#FFF; position:absolute; }
+
+/* styling the content box */
+#overlay-content 						{ width:500px; }
+#overlay-content div					{ width:450px; padding:25px; padding-bottom:10px; }
+#overlay-content a.close				{ display:block; padding:0px; border-top:1px solid #333; font-size:15px; line-height:25px; height:25px; 
+										  text-align:center; }
+#overlay-content a.thumb				{ display:block; width:102px; height:122px; padding:0px; margin:0px 14px 0px 0px; float:left;
+										  text-decoration:none; }
+#overlay-content a.thumb img			{ display:block; width:102px; height:102px; padding:0px; border:0px; }
+#overlay-content a.thumb span			{ display:block; width:102px; height:20px; padding:0px; text-align:center; color:#999; }
+#overlay-content a.last					{ margin-right:0px; }
+#overlay-content div 					{ overflow:auto; }
+.hidden									{ display:none; }
