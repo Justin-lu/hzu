@@ -1,38 +1,3 @@
-/*统一定义各样式*/
-html, body, div, span, iframe,
-h1, p, dl, dt, dd, ul, li,form, label
-{ 
-	margin:0px;
-	padding:0px;
-	border:0;
-	outline:0;
-	font-weight:inherit;
-	font-style:inherit;
-	font-size:100%;
-	font-family:inherit;
-	vertical-align:baseline;
-}
- 
-/*定义body属性*/
-body{ 
-  background:url(../images/background.jpg)
-}
-
-/*图标样式属性*/
-#school-logo{ 
-  position: relative;
-  top: 5px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-}
-
-#CS{ 
-  position: relative;
-  top: -4px;
-  left: 25px;
-}
-
 /*幻灯片边框*/
 #slider-wrapper {
 	background:url(../images/slider.png) no-repeat;
